@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="ZH">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NCKU ARCH 109</title>
+    <meta
+      name="description"
+      content="成大建築109級畢業設計作品網站，歡迎參觀!"
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- google font setting-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a class="large_logo" href="#"
+          ><img src="images/header/logo.svg" alt="logo"
+        /></a>
+        <a class="small_logo" href="#"
+          ><img src="images/header/small_logo.svg" alt="logo"
+        /></a>
+      </div>
+      <nav>
+        <ul>
+          <li class="drop_hidden"><a href="#">關於我們</a></li>
+          <li class="drop_hidden"><a href="#">作品總覽</a></li>
+          <li class="more_hidden drop_hidden"><a href="#">學習歷程</a></li>
+          <li class="more_hidden drop_hidden"><a href="#">製作花絮</a></li>
+          <li class="more_hidden drop_hidden"><a href="#">贊助單位</a></li>
+          <li class="more_hidden drop_hidden"><a href="#">畢刊購買</a></li>
+          <div class="nav_more">
+            <li>
+              <a href="#">更多資訊</a><i class="fa-solid fa-caret-down"></i>
+            </li>
+            <div class="nav_more_content">
+              <li><a href="#">學習歷程</a></li>
+              <li><a href="#">製作花絮</a></li>
+              <li><a href="#">贊助單位</a></li>
+              <li><a href="#">畢刊購買</a></li>
+            </div>
+          </div>
+          <div class="nav_drop">
+            <button class="icon"><i class="fa-solid fa-bars"></i></button>
+            <div class="nav_drop_content">
+              <li><a href="#">關於我們</a></li>
+              <li><a href="#">作品總覽</a></li>
+              <li><a href="#">學習歷程</a></li>
+              <li><a href="#">製作花絮</a></li>
+              <li><a href="#">贊助單位</a></li>
+              <li><a href="#">畢刊購買</a></li>
+            </div>
+          </div>
+        </ul>
+      </nav>
+      <div class="private">
+        <form action="" method="GET">
+          <button class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <input type="text" name="search" value="search" />
+        </form>
+        <div class="language">
+          <button class="globe">
+            <i class="fa-solid fa-globe"></i>繁體中文<i
+              class="fa-solid fa-caret-down"
+            ></i>
+          </button>
+          <div class="language_content">
+            <a href="#">English</a>
+            <a href="#">日本語</a>
+            <a href="#">Español</a>
+            <a href="#">Français</a>
+          </div>
+        </div>
+        <div class="profile">
+          <button class="more_profile">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+            <div class="profile_content">
+              <img src="images/header/logotext.jpg" alt="logo" />
+              <p>
+                建立個人設定檔案<br />打造符合個人需求的體驗、管理留言紀錄及分享心得。
+              </p>
+            </div>
+          </button>
+        </div>
+        <div class="profile_image">
+          <img src="images/header/profile.svg" alt="profile_image" />
+          <div class="account">
+            <img src="images/header/profile.svg" alt="profile_image" />
+            <p>name<br />email@email.com</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- <hr /> -->
+
+    <main>
+      <wrap>
+        <!-- welcome part -->
+        <section class="introduction">
+          <div class="intro_text">
+            <h2>歡迎參觀成大建築109級畢業設計特展!</h2>
+            <p>如果想更深入的了解我們，歡迎點此按鈕</p>
+            <button>關於我們</button>
+          </div>
+          <div class="intro_video">
+            <iframe
+              src="https://www.youtube.com/embed/yY7HZGTu_C0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
+        <hr />
+        <!-- project part -->
+        <section class="project">
+          <h1>精選作品</h1>
+          <div class="projects_showing">
+            <div class="project_img">
+              <img src="images/main/projects/1.jpg" alt="入世山水" />
+              <p>入世山水</p>
+            </div>
+            <div class="project_img">
+              <img src="images/main/projects/2.png" alt="南橫山屋" />
+              <p>南橫山屋</p>
+            </div>
+            <div class="project_img">
+              <img src="images/main/projects/3.jpg" alt="島嶼邊緣" />
+              <p>島嶼邊緣</p>
+            </div>
+            <div class="project_img">
+              <img src="images/main/projects/4.jpg" alt="沙鯤漁火" />
+              <p>沙鯤漁火</p>
+            </div>
+            <div class="project_img">
+              <img src="images/main/projects/5.jpg" alt="台北大眾走店" />
+              <p>台北大眾走店</p>
+            </div>
+            <div class="project_img">
+              <img src="images/main/projects/6.jpg" alt="絕美之城" />
+              <p>絕美之城</p>
+            </div>
+            <div class="project_img">
+              <img src="images/main/projects/7.jpg" alt="自由的索引" />
+              <p>自由的索引</p>
+            </div>
+            <div class="project_img">
+              <img src="images/main/projects/8.jpg" alt="拆'製" />
+              <p>拆'製</p>
+            </div>
+            <div class="project_img">
+              <img src="images/main/projects/9.png" alt="北投的名字" />
+              <p>北投的名字</p>
+            </div>
+            <div class="project_img">
+              <img src="images/main/projects/10.png" alt="寮剩於無" />
+              <p>寮剩於無</p>
+            </div>
+            <div class="project_img">
+              <img src="images/main/projects/11.jpg" alt="竹石方舟" />
+              <p>竹石方舟</p>
+            </div>
+            <div class="project_img">
+              <img src="images/main/projects/12.jpg" alt="無界博覽" />
+              <p>無界博覽</p>
+            </div>
+          </div>
+          <button>查看所有作品</button>
+        </section>
+        <!-- workshop part -->
+        <section class="workshop">
+          <div class="workshop_card">
+            <img src="images/main/workshop/workshop1.jpg" alt="workshop1" />
+            <h2>第一次工作營</h2>
+            <p>
+              「與都市的距離」為此次題目的方向，基地選址為中山路與中正路沿街，從台南火車站前圓環至河樂廣場一帶。在畢業設計之初，透過工作營短時間內的全面性操作，提出面對基地、空間以及議題上的辯證關係。
+            </p>
+            <button>點擊查看</button>
+          </div>
+          <div class="workshop_card">
+            <img src="images/main/workshop/workshop2.jpg" alt="workshop2" />
+            <h2>第二次工作營</h2>
+            <p>
+              此次工作營主要是藉由一系列剖面的組構觀察，重新檢視program在空間中的關係，並透過帶入九張剖面案例於個人畢業設計的剖面中，找出新的著力點或可能性，除了以垂直向度的空間觀察之外，我們也嘗試將建築硬線圖面象徵化
+              ，以不同角度的論述去閱讀剖面，試圖使單純圖像的關係將原本整併的圖面解構。
+            </p>
+            <button>點擊查看</button>
+          </div>
+        </section>
+        <!-- history design part -->
+        <section class="history_design">
+          <h1>歷年作品</h1>
+          <div class="history_design_cards">
+            <div class="single_design_card">
+              <img src="images/main/history/01.jpg" alt="線" />
+              <h2>大一設計-線</h2>
+              <p>
+                在線構成的操作中，我選擇以不同粗細的鐵絲作為材料，並以鋁片以適當的比例強調，並運用三點著地的方式讓作品輕巧的站立，展現出「線」的特性與姿態。
+              </p>
+              <h3>更多介紹</h3>
+            </div>
+            <div class="single_design_card">
+              <img src="images/main/history/02.jpg" alt="面" />
+              <h2>大一設計-面</h2>
+              <p>透過幾種關於面的概念，創作出的面構空間模型。</p>
+              <h3>更多介紹</h3>
+            </div>
+            <div class="single_design_card">
+              <img src="images/main/history/03.jpg" alt="古都基金會" />
+              <h2>大二設計-古都基金會</h2>
+              <p>
+                面中山路攘往轉入開隆宮靜僻廟埕內為都市層級尺度轉換之節點，透過置入成為一開口與媒介；設計中將建築內機能整體提升並開放地面層，中央結構核動線環繞盤旋上升，使內部擁有互通與共享的行政空間；兩矩形量體相接做轉折退入廟埕內輕盈的撐起，內部錯層及挑高產生對望空間，讓脈絡能接起都市並成為一活絡的辦公空間。
+              </p>
+              <h3>更多介紹</h3>
+            </div>
+            <div class="single_design_card">
+              <img src="images/main/history/04.jpg" alt="劇場" />
+              <h2>大二設計-劇場</h2>
+              <p>
+                針對實驗性創新偶戲劇團在台南發展的可能性提出一座高度彈性的劇場設計。舊有的港口文化撐起基地的過去，而新興產業的進駐則於港灣沒落後拉起活絡的現況。以偶戲撐與拉的兩種力學形式來回應上述的特殊基地脈絡，以動線核與鋼索分別束制水平力與承擔垂直載重，平面的自由度使樓板能以輕巧的構造回應城市轉角及內部機能。
+              </p>
+              <h3>更多介紹</h3>
+            </div>
+            <div class="single_design_card">
+              <img src="images/main/history/05.jpg" alt="系館設計" />
+              <h2>大三設計-系館設計</h2>
+              <p>
+                如何讓建築學校成為城市生活空間的一部分？思考過去建築教育中，學習常趨向一種專業者之間的討論，忽視了建築所服務的一般大眾。當建築系移至台南的城市中心，這棟建築應該如何面對公共？空間應如何刺激新型態的建築學習過程？我從台南的城市空間結構切入，嘗試創造一座屬於城市的學習中心。
+              </p>
+              <h3>更多介紹</h3>
+            </div>
+            <div class="single_design_card">
+              <img src="images/main/history/06.jpg" alt="複合建築" />
+              <h2>大三設計-複合建築</h2>
+              <p>
+                我們認為在台南，能有獨一無二的混居方式。未來年輕創業族群的居住與工作空間將越來越密不可分，因此結合工作與住宿空間的住居型態為我們設計的原點。在整體設計上引入周邊原有巷弄紋理，並意圖以垂直聚落形式延續巷弄步行經驗，以此從人文面整合傳統地域特質，設計出前瞻性的住居模式。
+              </p>
+              <h3>更多介紹</h3>
+            </div>
+            <div class="single_design_card">
+              <img src="images/main/history/07.jpg" alt="非直交建築空間系統" />
+              <h2>大四設計-非直交建築空間系統</h2>
+              <p>
+                傳統街屋淨寬狹窄，結構限制大。本設計期望透過將3個街屋寬度的基地重新整合，形成一個牆與牆間能夠穿透、互通有無的狀態。並且在穿越處揭露其非傳統正交的結構形式，使空間能夠呈現非理所當然的抽象性，試圖去理解、猜測此建築的力學傳遞行為與其空間構成的可能樣態。
+              </p>
+              <h3>更多介紹</h3>
+            </div>
+            <div class="single_design_card">
+              <img src="images/main/history/08.jpg" alt="未來場景建構" />
+              <h2>大四設計-未來場景建構</h2>
+              <p>
+                以透視裝置作為與大眾溝通的媒介。透過學期間針對不同世代環境與行為的觀察與分析，將之反映於建築型態的變化，並以透視圖整合不同類型，建構屬於我們想像中的未來城市場景。參觀裝置的人們則能依據個人對未來城市的想像對場景進行增減修改，於是未知將來的生活面貌在以建築空間作為腳本的基礎上逐漸浮現。
+              </p>
+              <h3>更多介紹</h3>
+            </div>
+          </div>
+        </section>
+        <!-- designer part -->
+        <section class="designer">
+          <h1>創作者們</h1>
+          <p class="designer_text">
+            畢業設計的基礎是我們在成大建築系五年以來，透過不同課程學習而來的知識建立的，不管是建築設計、工程結構、物環環控等建築專業
+            科目，抑或是非建築系本科所提供的涵養而能促成現今的成果。我們將這些課程分為七種類型並整理呈現在展覽中，提供給觀者了解，同
+            時作為一種紀錄我們學習歷程的工具。
+          </p>
+          <button class="meet_designer">認識所有創作者</button>
+          <div class="designer_cards">
+            <div class="single_designer">
+              <img src="images/main/designer/01.jpg" alt="林先生" />
+              <h2>林先生</h2>
+              <p>作品:</p>
+              <p class="project_name">拆'製</p>
+              <button>個人簡介</button>
+            </div>
+            <div class="single_designer">
+              <img src="images/main/designer/02.jpg" alt="沈先生" />
+              <h2>沈先生</h2>
+              <p>作品:</p>
+              <p class="project_name">絕美之城</p>
+              <button>個人簡介</button>
+            </div>
+            <div class="single_designer">
+              <img src="images/main/designer/03.jpg" alt="林女士" />
+              <h2>林女士</h2>
+              <p>作品:</p>
+              <p class="project_name">重溯城市脈動</p>
+              <button>個人簡介</button>
+            </div>
+            <div class="single_designer">
+              <img src="images/main/designer/04.jpg" alt="曾先生" />
+              <h2>曾先生</h2>
+              <p>作品:</p>
+              <p class="project_name">城市更新中!</p>
+              <button>個人簡介</button>
+            </div>
+          </div>
+        </section>
+      </wrap>
+    </main>
+
+    <footer>
+      <hr />
+      <div class="social_media">
+        <div class="logo">
+          <a class="small_logo" href="#"
+            ><img src="images/header/small_logo.svg" alt="logo"
+          /></a>
+        </div>
+        <div class="contact">
+          <p class="contact_us">聯絡我們</p>
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">Youtube</a>
+        </div>
+      </div>
+      <hr />
+      <div class="copyright">
+        <p>Michael Shen ©</p>
+      </div>
+    </footer>
+  </body>
+</html>

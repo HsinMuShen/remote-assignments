@@ -1,0 +1,1061 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 10vh;
+  -webkit-box-shadow: 0px 3px 8px rgba(110, 110, 110, 0.7);
+          box-shadow: 0px 3px 8px rgba(110, 110, 110, 0.7);
+}
+
+header div.logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100px;
+          flex: 1 1 100px;
+  margin-left: 1rem;
+}
+
+header div.logo a.large_logo img {
+  width: 20vw;
+}
+
+header div.logo a.small_logo img {
+  display: none;
+}
+
+header nav {
+  -webkit-box-flex: 6;
+      -ms-flex: 6 1 300px;
+          flex: 6 1 300px;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+header nav ul li {
+  margin-right: 1.25rem;
+}
+
+header nav ul li a {
+  color: #555555;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+header nav ul div.nav_more, header nav ul div.nav_drop {
+  display: none;
+}
+
+header div.private {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-flex: 6;
+      -ms-flex: 6 1 200px;
+          flex: 6 1 200px;
+  margin-right: 2rem;
+}
+
+header div.private form {
+  margin-right: 0.5rem;
+}
+
+header div.private form input {
+  padding: 0.5rem 0;
+}
+
+header div.private form button.search {
+  background-color: white;
+  border: none;
+  font-size: 1.25rem;
+  color: #555555;
+  cursor: pointer;
+}
+
+header div.private div.language button.globe {
+  background-color: white;
+  border-width: 0.1rem;
+  border-color: #55555581;
+  border-radius: 0.5rem;
+  min-width: 100px;
+  padding: 0.5rem 0.5rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+header div.private div.language div.language_content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+header div.private div.language div.language_content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 0.5rem;
+}
+
+header div.private div.language div.language_content a:hover {
+  background-color: #f1f1f1;
+}
+
+header div.private div.language:hover div.language_content {
+  display: block;
+}
+
+header div.private div.language:hover .fa-caret-down {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+header div.private div.profile button.more_profile {
+  background-color: #e1e1e1;
+  border-style: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  margin-right: 0.5rem;
+  cursor: pointer;
+  position: relative;
+}
+
+header div.private div.profile div.profile_content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 400px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 4rem 2rem;
+  margin-top: 1.25rem;
+  right: 0;
+}
+
+header div.private div.profile div.profile_content img {
+  width: 15vw;
+  margin-bottom: 2rem;
+}
+
+header div.private div.profile:hover div.profile_content {
+  display: block;
+}
+
+header div.private div.profile_image img {
+  width: 35px;
+}
+
+header div.private div.profile_image div.account {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 300px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 2rem 0rem;
+  margin-top: 1.25rem;
+  right: 0;
+  text-align: center;
+}
+
+header div.private div.profile_image div.account img {
+  width: 5vw;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+header div.private div.profile_image:hover div.account {
+  display: block;
+}
+
+main wrap section.introduction {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 2rem 0;
+  min-height: 40vh;
+}
+
+main wrap section.introduction div.intro_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main wrap section.introduction div.intro_text h2 {
+  color: #c41f20;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+main wrap section.introduction div.intro_text p {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+main wrap section.introduction div.intro_text button {
+  color: white;
+  background-color: #c41f20;
+  border: none;
+  border-radius: 0.25rem;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  padding: 0.5rem 2rem;
+}
+
+main wrap section.introduction div.intro_video iframe {
+  width: 45vw;
+  height: 25vw;
+}
+
+main wrap hr {
+  height: 1px;
+  border: none;
+  background-color: #d7d7d79f;
+}
+
+main wrap section.project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main wrap section.project h1 {
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+main wrap section.project div.projects_showing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main wrap section.project div.projects_showing div.project_img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 14vw;
+  margin: 15px 5vw;
+  cursor: pointer;
+}
+
+main wrap section.project div.projects_showing div.project_img img {
+  margin-bottom: 1rem;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+}
+
+main wrap section.project button {
+  color: white;
+  background-color: #c41f20;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem 4rem;
+  margin: 4rem 0;
+}
+
+main wrap section.workshop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main wrap section.workshop div.workshop_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 48vw;
+  border: solid 1px #89898968;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+main wrap section.workshop div.workshop_card img {
+  width: 48vw;
+  height: 8vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+  border-bottom: solid 1px #89898968;
+}
+
+main wrap section.workshop div.workshop_card h2 {
+  font-size: 1.25rem;
+  margin: 1rem 0 1rem 0.5rem;
+}
+
+main wrap section.workshop div.workshop_card p {
+  width: 45vw;
+  font-size: 0.75rem;
+  margin: 0 0 1rem 0.5rem;
+}
+
+main wrap section.workshop div.workshop_card button {
+  color: #c41f20;
+  background-color: white;
+  border: solid 1px #55555584;
+  border-radius: 0.25rem;
+  padding: 0.5rem 2rem;
+  margin: auto 0 1rem 0.5rem;
+  cursor: pointer;
+}
+
+main wrap section.workshop div.workshop_card button:hover {
+  background-color: #c41f1f35;
+}
+
+main wrap section.history_design {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #e8e8e867;
+  padding-bottom: 2rem;
+}
+
+main wrap section.history_design h1 {
+  margin-top: 2rem;
+}
+
+main wrap section.history_design div.history_design_cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main wrap section.history_design div.history_design_cards div.single_design_card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 20vw;
+  background-color: #ffffff;
+  border: solid 1px #41414168;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+  overflow: hidden;
+}
+
+main wrap section.history_design div.history_design_cards div.single_design_card img {
+  width: 12vw;
+  height: 12vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  margin: 2rem auto;
+}
+
+main wrap section.history_design div.history_design_cards div.single_design_card h2 {
+  color: #c41f20;
+  font-size: 1.25rem;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin: 0 1rem 1.5rem 1rem;
+}
+
+main wrap section.history_design div.history_design_cards div.single_design_card p {
+  font-size: 0.9rem;
+  margin: 1rem 1rem;
+}
+
+main wrap section.history_design div.history_design_cards div.single_design_card h3 {
+  color: #c41f20;
+  font-size: 0.9rem;
+  font-weight: normal;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 0 0.5rem;
+  margin: auto 1rem 1rem 0.5rem;
+  cursor: pointer;
+}
+
+main wrap section.history_design div.history_design_cards div.single_design_card h3:hover {
+  background-color: #c41f1f35;
+}
+
+main wrap section.designer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main wrap section.designer h1 {
+  font-size: 1.75rem;
+  margin: 2.5rem 0 1.5rem 0;
+}
+
+main wrap section.designer p.designer_text {
+  text-align: center;
+  width: 60vw;
+}
+
+main wrap section.designer button.meet_designer {
+  color: #c41f20;
+  background-color: white;
+  border: solid 1px #55555584;
+  border-radius: 0.25rem;
+  padding: 0.5rem 2rem;
+  margin: 2rem 0 1rem 0;
+  cursor: pointer;
+}
+
+main wrap section.designer div.designer_cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 90vw;
+}
+
+main wrap section.designer div.designer_cards div.single_designer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 20vw;
+  border: solid 1px #aeaeae68;
+  border-radius: 0.5rem;
+  margin: 2rem 0rem;
+  overflow: hidden;
+}
+
+main wrap section.designer div.designer_cards div.single_designer img {
+  width: 8vw;
+  height: 8vw;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-position: center;
+  margin: 1rem auto;
+}
+
+main wrap section.designer div.designer_cards div.single_designer h2 {
+  font-weight: normal;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+main wrap section.designer div.designer_cards div.single_designer p {
+  font-size: 0.8rem;
+  margin: 0.1rem 0;
+}
+
+main wrap section.designer div.designer_cards div.single_designer p.project_name {
+  color: #555555;
+}
+
+main wrap section.designer div.designer_cards div.single_designer button {
+  color: #c41f20;
+  background-color: white;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+main wrap section.designer div.designer_cards div.single_designer button:hover {
+  background-color: #c41f1f35;
+}
+
+footer hr {
+  height: 1px;
+  border: none;
+  background-color: #d7d7d79f;
+}
+
+footer div.social_media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 10vh;
+}
+
+footer div.social_media div.logo {
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+footer div.social_media div.logo a img {
+  width: 100px;
+}
+
+footer div.social_media div.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer div.social_media div.contact p {
+  margin-right: 1rem;
+}
+
+footer div.social_media div.contact a {
+  text-decoration: none;
+  color: #707070;
+  margin-right: 0.75rem;
+}
+
+footer div.copyright {
+  min-height: 5vh;
+}
+
+footer div.copyright p {
+  margin-left: 4rem;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 800px) {
+  header div.logo {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 70px;
+            flex: 1 1 70px;
+    margin-right: 0.5rem;
+  }
+  header div.logo a.large_logo img {
+    display: none;
+  }
+  header div.logo a.small_logo img {
+    display: block;
+    width: 90px;
+  }
+  header nav {
+    -webkit-box-flex: 3;
+        -ms-flex: 3 1 200px;
+            flex: 3 1 200px;
+  }
+  header nav ul li {
+    margin-right: 1rem;
+  }
+  header nav ul li.more_hidden {
+    display: none;
+  }
+  header nav ul div.nav_more {
+    display: block;
+  }
+  header nav ul div.nav_more li a {
+    margin-right: 0.5rem;
+  }
+  header nav ul div.nav_more div.nav_more_content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100px;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 0;
+  }
+  header nav ul div.nav_more div.nav_more_content a {
+    color: black;
+    padding: 12px 12px;
+    min-width: 100px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.5rem;
+  }
+  header nav ul div.nav_more div.nav_more_content a:hover {
+    background-color: #f1f1f1;
+  }
+  header nav ul div.nav_more:hover div.nav_more_content {
+    display: block;
+  }
+  header nav ul div.nav_more:hover li i.fa-caret-down {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  header div.private {
+    -webkit-box-flex: 8;
+        -ms-flex: 8 1 300px;
+            flex: 8 1 300px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  main wrap section.introduction div.intro_video {
+    margin: auto 0;
+  }
+  main wrap section.introduction div.intro_video iframe {
+    width: 45vw;
+    height: 30vw;
+  }
+  main wrap section.history_design div.history_design_cards div.single_design_card {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 25vw;
+  }
+  main wrap section.history_design div.history_design_cards div.single_design_card img {
+    width: 20vw;
+    height: 20vw;
+  }
+  main wrap section.designer p.designer_text {
+    width: 80vw;
+  }
+  main wrap section.designer div.designer_cards div.single_designer {
+    width: 43vw;
+    border-radius: 0.5rem;
+    margin: 1rem 0rem;
+  }
+  main wrap section.designer div.designer_cards div.single_designer img {
+    width: 12vw;
+    height: 12vw;
+  }
+}
+
+@media screen and (max-width: 800px) and (min-width: 500px) {
+  header div.logo {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 0px;
+            flex: 1 1 0;
+    margin-right: 1rem;
+  }
+  header div.logo a.large_logo img {
+    display: none;
+  }
+  header div.logo a.small_logo img {
+    display: block;
+    width: 70px;
+  }
+  header nav {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50px;
+            flex: 1 1 50px;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  header nav ul li.drop_hidden {
+    display: none;
+  }
+  header nav ul div.nav_drop {
+    display: block;
+    position: relative;
+  }
+  header nav ul div.nav_drop button {
+    background-color: white;
+    font-size: 1.25rem;
+    border: none;
+    cursor: pointer;
+  }
+  header nav ul div.nav_drop_content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100px;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 0;
+  }
+  header nav ul div.nav_drop_content a {
+    color: black;
+    padding: 12px 12px;
+    min-width: 100px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.5rem;
+  }
+  header nav ul div.nav_drop_content a:hover {
+    background-color: #f1f1f1;
+  }
+  header nav ul div.nav_drop:hover div.nav_drop_content {
+    display: block;
+  }
+  header div.private {
+    -webkit-box-flex: 8;
+        -ms-flex: 8 1 200px;
+            flex: 8 1 200px;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+  header div.private form input {
+    display: none;
+  }
+  main wrap section.introduction div.intro_text {
+    width: 35vw;
+  }
+  main wrap section.introduction div.intro_text h2 {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  main wrap section.introduction div.intro_text p {
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+  }
+  main wrap section.introduction div.intro_video {
+    margin: auto 0;
+  }
+  main wrap section.introduction div.intro_video iframe {
+    width: 45vw;
+    height: 35vw;
+  }
+  main wrap section.workshop div.workshop_card {
+    width: 80vw;
+  }
+  main wrap section.workshop div.workshop_card img {
+    width: 80vw;
+    height: 20vw;
+  }
+  main wrap section.workshop div.workshop_card h2 {
+    font-size: 1rem;
+  }
+  main wrap section.workshop div.workshop_card p {
+    width: 70vw;
+    font-size: 0.75rem;
+  }
+  main wrap section.history_design div.history_design_cards div.single_design_card {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 40vw;
+  }
+  main wrap section.history_design div.history_design_cards div.single_design_card img {
+    width: 24vw;
+    height: 24vw;
+    margin: 1rem auto;
+  }
+  main wrap section.history_design div.history_design_cards div.single_design_card h2 {
+    font-size: 1rem;
+    margin: 0 1rem 0.5rem 1rem;
+  }
+  main wrap section.designer p.designer_text {
+    width: 80vw;
+  }
+  main wrap section.designer div.designer_cards div.single_designer {
+    width: 43vw;
+    border-radius: 0.5rem;
+    margin: 1rem 0rem;
+  }
+  main wrap section.designer div.designer_cards div.single_designer img {
+    width: 12vw;
+    height: 12vw;
+  }
+  footer div.social_media div.logo {
+    margin-left: 2rem;
+    margin-right: 1rem;
+  }
+  footer div.social_media div.logo a img {
+    width: 80px;
+  }
+  footer div.social_media div.contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  footer div.social_media div.contact p {
+    font-size: 0.75rem;
+    margin-right: 0.5rem;
+  }
+  footer div.social_media div.contact a {
+    font-size: 0.75rem;
+    margin-right: 0.5rem;
+  }
+  footer div.copyright {
+    min-height: 3vh;
+  }
+  footer div.copyright p {
+    font-size: 0.75rem;
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header div.logo {
+    margin: 0rem;
+    -webkit-box-flex: 2;
+        -ms-flex: 2 1 20px;
+            flex: 2 1 20px;
+  }
+  header div.logo a.large_logo img {
+    display: none;
+  }
+  header div.logo a.small_logo img {
+    display: block;
+    width: 70px;
+  }
+  header nav {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 0px;
+            flex: 1 1 0px;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    margin: 0rem;
+  }
+  header nav ul li.drop_hidden {
+    display: none;
+  }
+  header nav ul div.nav_drop {
+    display: block;
+    position: relative;
+  }
+  header nav ul div.nav_drop button {
+    background-color: white;
+    font-size: 1.25rem;
+    border: none;
+    cursor: pointer;
+  }
+  header nav ul div.nav_drop_content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    width: 100px;
+    -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 0;
+  }
+  header nav ul div.nav_drop_content a {
+    color: black;
+    padding: 12px 12px;
+    min-width: 100px;
+    text-decoration: none;
+    display: block;
+    font-size: 0.5rem;
+  }
+  header nav ul div.nav_drop_content a:hover {
+    background-color: #f1f1f1;
+  }
+  header nav ul div.nav_drop:hover div.nav_drop_content {
+    display: block;
+  }
+  header div.language {
+    display: none;
+  }
+  header div.private {
+    -webkit-box-flex: 2;
+        -ms-flex: 2 1 0px;
+            flex: 2 1 0;
+    margin: 0rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header div.private form input {
+    display: none;
+  }
+  main wrap section.introduction div.intro_text {
+    width: 80vw;
+    margin-top: 2rem;
+  }
+  main wrap section.introduction div.intro_video {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  main wrap section.introduction div.intro_video iframe {
+    width: 80vw;
+    height: 60vw;
+  }
+  main wrap section.project h1 {
+    font-size: 1.5rem;
+  }
+  main wrap section.project div.projects_showing div.project_img {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-width: 25vw;
+    margin: 15px 5vw;
+    cursor: pointer;
+  }
+  main wrap section.project button {
+    padding: 0.5rem 2rem;
+  }
+  main wrap section.workshop div.workshop_card {
+    width: 80vw;
+  }
+  main wrap section.workshop div.workshop_card img {
+    width: 80vw;
+    height: 20vw;
+  }
+  main wrap section.workshop div.workshop_card h2 {
+    font-size: 1rem;
+  }
+  main wrap section.workshop div.workshop_card p {
+    width: 70vw;
+    font-size: 0.75rem;
+  }
+  main wrap section.history_design div.history_design_cards div.single_design_card {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 80vw;
+  }
+  main wrap section.history_design div.history_design_cards div.single_design_card img {
+    width: 48vw;
+    height: 48vw;
+  }
+  main wrap section.designer p.designer_text {
+    width: 80vw;
+  }
+  main wrap section.designer div.designer_cards div.single_designer {
+    width: 80vw;
+    border-radius: 0.5rem;
+    margin: 1rem auto;
+  }
+  main wrap section.designer div.designer_cards div.single_designer img {
+    width: 16vw;
+    height: 16vw;
+  }
+  footer div.social_media div.logo {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  footer div.social_media div.logo a img {
+    width: 60px;
+  }
+  footer div.social_media div.contact {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  footer div.social_media div.contact p {
+    font-size: 0.75rem;
+    margin-right: 0.5rem;
+  }
+  footer div.social_media div.contact a {
+    font-size: 0.75rem;
+    margin-right: 0.5rem;
+  }
+  footer div.copyright {
+    min-height: 3vh;
+  }
+  footer div.copyright p {
+    font-size: 0.75rem;
+    margin-left: 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

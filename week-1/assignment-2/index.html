@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nomad Sketching</title>
+    <meta name="description" content="這是我的速寫作品集網站，歡迎參觀!" />
+    <meta name="robots" content="index, follow" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- google font setting-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="logo">
+        <a href="/">
+          <img src="pictures/logo/nomad_sketching_logo.svg" alt="logo" />
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">首頁</a></li>
+          <li><a href="#">關於我</a></li>
+          <li><a href="#">聯絡我</a></li>
+          <div class="dropdown">
+            <button class="icon"><i class="fa-solid fa-bars"></i></button>
+            <div class="dropdown-content">
+              <a href="#">首頁</a>
+              <a href="#">關於我</a>
+              <a href="#">聯絡我</a>
+            </div>
+          </div>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!--Welcome part-->
+      <section class="backImage">
+        <h3>
+          歡迎來到游牧速寫，<br />
+          我已經迫不及待想與您分享我的作品了!
+        </h3>
+        <button class="start"><a href="#second">開始參觀</a></button>
+      </section>
+
+      <!--Second part-->
+      <section class="second" id="second">
+        <h3>
+          我喜歡將自己的生活環境以手繪的方式紀錄，<br />
+          以下為大致的分類......
+        </h3>
+        <section class="classification">
+          <div>
+            <img src="pictures/homepage/city_collage 1.svg" />
+            <div class="info"><p>台灣城市</p></div>
+          </div>
+          <div>
+            <img src="pictures/homepage/deform_collage.svg" />
+            <div class="info"><p>畸零地</p></div>
+          </div>
+          <div>
+            <img src="pictures/homepage/nature_collage.svg" />
+            <div class="info"><p>自然</p></div>
+          </div>
+          <div>
+            <img src="pictures/homepage/others_collage.svg" />
+            <div class="info"><p>其它</p></div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <footer>
+      <p>Michael Shen ©</p>
+    </footer>
+  </body>
+</html>
