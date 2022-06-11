@@ -197,6 +197,9 @@ footer p {
   main section.second {
     width: 1200px;
   }
+  main section.second div img {
+    width: 550px;
+  }
 }
 
 @media screen and (max-width: 1200px) and (min-width: 800px) {
