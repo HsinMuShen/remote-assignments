@@ -52,7 +52,7 @@ header nav ul li a {
 
 main section.backImage {
   min-height: 80vh;
-  width: 100vw;
+  width: 95vw;
   background-image: url(../pictures/homepage/welcome.svg);
   background-size: cover;
   background-position: center;
@@ -96,7 +96,6 @@ main section.backImage button.start a {
 main section.second {
   margin: 0 auto;
   text-align: center;
-  width: 80%;
 }
 
 main section.second h3 {
@@ -112,9 +111,9 @@ main section.second section.classification {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -125,7 +124,7 @@ main section.second section.classification div {
 }
 
 main section.second section.classification div img {
-  max-width: 38vw;
+  max-width: 45vw;
 }
 
 main section.second section.classification div img:hover {
@@ -192,6 +191,12 @@ footer p {
   header nav ul div.dropdown .dropdown-content {
     display: none;
   }
+  main section.backImage {
+    width: 1200px;
+  }
+  main section.second {
+    width: 1200px;
+  }
 }
 
 @media screen and (max-width: 1200px) and (min-width: 800px) {
@@ -252,7 +257,7 @@ footer p {
     margin: 2rem 0;
   }
   main section.second section.classification div img {
-    width: 40vw;
+    width: 45vw;
   }
 }
 
@@ -314,6 +319,11 @@ footer p {
   main section.second h3 {
     font-size: 0.8rem;
     margin: 2rem 0;
+  }
+  main section.second section.classification {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   main section.second section.classification div img {
     min-width: 80vw;
