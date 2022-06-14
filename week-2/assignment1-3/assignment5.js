@@ -1,13 +1,12 @@
 function twoSum(nums, target) {
-  let ans = [];
   for (let i = 0; i < nums.length; i++) {
-    for (let j = nums.length - 1; j > i; j--) {
-      if (nums[i] + nums[j] === target) {
-        ans.push(i, j);
-      }
+    let sub = target - nums[i];
+    let subIndex = nums.indexOf(sub);
+
+    if (subIndex !== -1 && subIndex !== i) {
+      return [i, subIndex];
     }
   }
-  return ans;
 }
 /*
     For example:

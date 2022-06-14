@@ -8,8 +8,7 @@ const closeIcon = document.querySelector(".fa-xmark");
 const menuIcon = document.querySelector(".fa-bars");
 
 welcome.style.cursor = "pointer";
-welcome.addEventListener("click", (e) => {
-  //   console.log(welcome.children[0].innerText);
+welcome.addEventListener("click", () => {
   welcome.children[0].innerText = "Have a good time!";
 });
 
@@ -25,8 +24,7 @@ icon.addEventListener("click", () => {
   }
 });
 
-showbtn.addEventListener("click", (e) => {
-  //   console.log(showbtn.innerText);
+showbtn.addEventListener("click", () => {
   if (showbtn.innerText === "Call to Action") {
     hideContents.style.display = "flex";
     showbtn.innerText = "Hide Contents";
