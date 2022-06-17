@@ -1,12 +1,17 @@
 function twoSum(nums, target) {
-  for (let i = 0; i < nums.length; i++) {
-    let sub = target - nums[i];
-    let subIndex = nums.indexOf(sub);
+  let numsObj = {};
 
-    if (subIndex !== -1 && subIndex !== i) {
-      return [i, subIndex];
+  for (let i = 0; i < nums.length; i++) {
+    const sub = target - nums[i];
+    if (sub in numsObj) {
+      // if found, return
+      return [numsObj[sub], i];
     }
+
+    numsObj[nums[i]] = i;
+    // console.log(numsObj);
   }
+  return null;
 }
 /*
     For example:
