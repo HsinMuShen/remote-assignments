@@ -1,0 +1,11 @@
+
+if(username)
+    h2 Nice to meet you #{username}!
+    form(action='/logout', method='GET')
+        button(type='submit') Submit Name Again
+else
+    form(action='/trackName',method='GET')
+        label Welcome! Please enter your name!
+            input(type='text', name='username')  
+        button(type='submit') Submit
+    
