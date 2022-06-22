@@ -39,7 +39,6 @@ app.get("/trackName", (req, res) => {
   const { username } = req.query;
   res.cookie("username", username);
   res.redirect("/myName");
-  console.log(req.body);
 });
 
 app.get("/logout", (req, res) => {
