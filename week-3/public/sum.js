@@ -1,24 +1,28 @@
 function example() {
-  const xhr = new XMLHttpRequest();
-  const url = "getData?number=10";
-  xhr.onreadystatechange = () => {
-    if (xhr.readyState === 4) {
-      document.getElementById("ex").innerHTML = xhr.responseText;
-    }
-  };
-  xhr.open("GET", url);
-  xhr.send();
+  fetch(`getData?number=10`)
+    .then((response) => {
+      return response.json();
+    })
+    .then((d) => {
+      document.getElementById("ex").innerHTML = `The factorial of 10 is ${d}`;
+    })
+    .catch((e) => {
+      console.log(e);
+    });
 }
 
-function calculate() {
-  const xhr = new XMLHttpRequest();
+async function calculate() {
   const num = document.getElementById("number").value;
-  const url = `getData?number=${num}`;
-  xhr.onreadystatechange = () => {
-    if (xhr.readyState === 4) {
-      document.getElementById("result").innerHTML = xhr.responseText;
-    }
-  };
-  xhr.open("GET", url);
-  xhr.send();
+  fetch(`getData?number=${num}`)
+    .then((response) => {
+      return response.json();
+    })
+    .then((d) => {
+      document.getElementById(
+        "result"
+      ).innerHTML = `The factorial of ${num} is ${d}`;
+    })
+    .catch((e) => {
+      console.log(e);
+    });
 }

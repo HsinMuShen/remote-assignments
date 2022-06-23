@@ -25,7 +25,7 @@ app.get("/getData", (req, res) => {
   if (!number) {
     res.send("Lack of Parameter");
   } else if (!isNaN(number)) {
-    res.send(`The factorial of ${number} is : ${factorial(Number(number))}`);
+    res.send(`${factorial(Number(number))}`);
   } else {
     res.send("Wrong Parameter");
   }
