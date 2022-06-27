@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/remote-assignments/static/css/main.576a1ca3.css",
+    "main.js": "/remote-assignments/static/js/main.f6bd589c.js",
+    "static/media/deform_collage.svg": "/remote-assignments/static/media/deform_collage.8bcf550164abbebd59f351678fe91d1b.svg",
+    "static/media/welcome.svg": "/remote-assignments/static/media/welcome.c4c9b0d7fd827e2646bc240322b60ce5.svg",
+    "static/media/city_collage 1.svg": "/remote-assignments/static/media/city_collage 1.3d5a863069e0c85c91e8cac907acc781.svg",
+    "static/media/others_collage.svg": "/remote-assignments/static/media/others_collage.0b438bf3c79ffde95fad8e313d9a7847.svg",
+    "static/media/nature_collage.svg": "/remote-assignments/static/media/nature_collage.15ed3bbb44c14d1b14163e02393afe32.svg",
+    "static/media/nomad_sketching_logo.svg": "/remote-assignments/static/media/nomad_sketching_logo.15fe4047a4990df7d9dfba47c747165b.svg",
+    "index.html": "/remote-assignments/index.html",
+    "main.576a1ca3.css.map": "/remote-assignments/static/css/main.576a1ca3.css.map",
+    "main.f6bd589c.js.map": "/remote-assignments/static/js/main.f6bd589c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.576a1ca3.css",
+    "static/js/main.f6bd589c.js"
+  ]
+}
