@@ -3,19 +3,25 @@ import { BrowserRouter as Router, Link } from "react-router-dom";
 import logo from "./pictures/logo/nomad_sketching_logo.svg";
 
 const Nav = () => {
-  let [menuClass, setMenuClass] = useState("menu");
-  let [closeIconStyle, setCloseIconStyle] = useState("none");
-  let [menuIconStyle, setMenuIconStyle] = useState("block");
+  const [changeStyle, setChangeStyle] = useState({
+    menuClass: "menu",
+    closeIconStyle: "none",
+    menuIconStyle: "block",
+  });
 
   const changeMenuState = () => {
-    if (menuClass === "menu showMenu") {
-      setMenuClass("menu");
-      setCloseIconStyle("none");
-      setMenuIconStyle("block");
+    if (changeStyle.menuClass === "menu showMenu") {
+      setChangeStyle({
+        menuClass: "menu",
+        closeIconStyle: "none",
+        menuIconStyle: "block",
+      });
     } else {
-      setMenuClass("menu showMenu");
-      setCloseIconStyle("block");
-      setMenuIconStyle("none");
+      setChangeStyle({
+        menuClass: "menu showMenu",
+        closeIconStyle: "block",
+        menuIconStyle: "none",
+      });
     }
   };
   return (
@@ -27,7 +33,7 @@ const Nav = () => {
           </Link>
         </div>
         <nav>
-          <ul className={menuClass}>
+          <ul className={changeStyle.menuClass}>
             <li className="menuItem">
               <Link to="#">首頁</Link>
             </li>
@@ -41,11 +47,11 @@ const Nav = () => {
           <button className="icon" onClick={changeMenuState}>
             <i
               className="fa-solid fa-bars"
-              style={{ display: menuIconStyle }}
+              style={{ display: changeStyle.menuIconStyle }}
             ></i>
             <i
               className="fa-solid fa-xmark"
-              style={{ display: closeIconStyle }}
+              style={{ display: changeStyle.closeIconStyle }}
             ></i>
           </button>
         </nav>

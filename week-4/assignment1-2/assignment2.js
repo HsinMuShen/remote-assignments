@@ -1,13 +1,13 @@
-function ajax(src, callback) {
-  callback(src);
+async function ajax(src, callback) {
+  let fetchData = await fetch(src);
+  let parseData = await fetchData.json();
+  callback(parseData);
 }
 
-async function render(data) {
-  let fetchData = await fetch(data);
-  let parseData = await fetchData.json();
+function render(data) {
   const urlItem = document.querySelector("#urlItem");
-  for (let i = 0; i < parseData.length; i++) {
-    let text = `name:${parseData[i].name}  price:${parseData[i].price}  description:${parseData[i].description}`;
+  for (let i = 0; i < data.length; i++) {
+    let text = `name:${data[i].name}  price:${data[i].price}  description:${data[i].description}`;
     let textSection = document.createElement("p");
     textSection.innerText = text;
 

@@ -1,20 +1,20 @@
 import React, { useState } from "react";
 import background from "./pictures/homepage/welcome.svg";
-import taiwanCity from "./pictures/homepage/city_collage 1.svg";
+import taiwanCity from "./pictures/homepage/city_collage.svg";
 import deform from "./pictures/homepage/deform_collage.svg";
 import nature from "./pictures/homepage/nature_collage.svg";
 import others from "./pictures/homepage/others_collage.svg";
 
 const Homepage = () => {
-  let [welcome, setWelcome] = useState(
+  const [welcome, setWelcome] = useState(
     `歡迎來到游牧速寫，我已經迫不及待想與您分享我的作品了!`
   );
   const changeText = () => {
     setWelcome("Have a good time!");
   };
 
-  let [showbtn, setShowbtn] = useState(`Call to Action`);
-  let [showbtnStyle, setShowbtnStyle] = useState("none");
+  const [showbtn, setShowbtn] = useState(`Call to Action`);
+  const [showbtnStyle, setShowbtnStyle] = useState("none");
   const showMore = () => {
     if (showbtn === "Call to Action") {
       setShowbtnStyle("flex");
