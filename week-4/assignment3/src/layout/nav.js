@@ -3,25 +3,12 @@ import { BrowserRouter as Router, Link } from "react-router-dom";
 import logo from "./pictures/logo/nomad_sketching_logo.svg";
 
 const Nav = () => {
-  const [changeStyle, setChangeStyle] = useState({
-    menuClass: "menu",
-    closeIconStyle: "none",
-    menuIconStyle: "block",
-  });
-
+  const [changeStyle, setChangeStyle] = useState(true);
   const changeMenuState = () => {
-    if (changeStyle.menuClass === "menu showMenu") {
-      setChangeStyle({
-        menuClass: "menu",
-        closeIconStyle: "none",
-        menuIconStyle: "block",
-      });
+    if (changeStyle) {
+      setChangeStyle(false);
     } else {
-      setChangeStyle({
-        menuClass: "menu showMenu",
-        closeIconStyle: "block",
-        menuIconStyle: "none",
-      });
+      setChangeStyle(true);
     }
   };
   return (
@@ -33,7 +20,7 @@ const Nav = () => {
           </Link>
         </div>
         <nav>
-          <ul className={changeStyle.menuClass}>
+          <ul className={changeStyle ? null : "showMenu"}>
             <li className="menuItem">
               <Link to="#">首頁</Link>
             </li>
@@ -45,14 +32,11 @@ const Nav = () => {
             </li>
           </ul>
           <button className="icon" onClick={changeMenuState}>
-            <i
-              className="fa-solid fa-bars"
-              style={{ display: changeStyle.menuIconStyle }}
-            ></i>
-            <i
-              className="fa-solid fa-xmark"
-              style={{ display: changeStyle.closeIconStyle }}
-            ></i>
+            {changeStyle ? (
+              <i className="fa-solid fa-bars"></i>
+            ) : (
+              <i className="fa-solid fa-xmark"></i>
+            )}
           </button>
         </nav>
       </header>
